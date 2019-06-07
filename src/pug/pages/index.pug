@@ -14,33 +14,34 @@ html(lang='en')
         title Potencialex
 
     body
-        div(class="head")
-            nav(class="navbar navbar-expand-md")
-                a(class="navbar-brand" href="#")
-                    sup &copy;
-                    | Potencialex
-                
-                button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                    span(class="navbar-toggler-icon")
+        div(class="wrapper")
+            div(class="head")
+                nav(class="navbar navbar-expand-md")
+                    a(class="navbar-brand text-white" href="#")
+                        sup &copy;
+                        | Potencialex
+                    
+                    button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                        span(class="navbar-toggler-icon")
 
-                div(class="collapse navbar-collapse justify-content-end" id="navbar")
-                    ul(class="navbar-nav")
-                        li(class="nav-item mr-3")
-                            a(class="" href="#buy") Купить
-                        li(class="nav-item mr-3")
-                            a(class="" href="#short-description") Краткое описание
-                        li(class="nav-item mr-3")
-                            a(class="" href="#property-product") Свойства товара
+                    div(class="collapse navbar-collapse justify-content-end" id="navbar")
+                        ul(class="navbar-nav")
+                            li(class="nav-item mr-3")
+                                a(class="text-white" href="#buy") Купить
+                            li(class="nav-item mr-3")
+                                a(class="text-white" href="#short-description") Краткое описание
+                            li(class="nav-item mr-3")
+                                a(class="text-white" href="#property-product") Свойства товара
 
-            header(class="header"  id="short-description")
-                include ../layouts/block_1.pug
+                header(class="header"  id="short-description")
+                    include ../layouts/block_1.pug
 
-        section(class="content")
-            include ../layouts/block_2.pug
-            include ../layouts/block_3.pug
+            section(class="content")
+                include ../layouts/block_2.pug
+                include ../layouts/block_3.pug
 
-        footer(class="footer")
-            include ../layouts/block_4.pug
+            footer(class="footer")
+                include ../layouts/block_4.pug
 
         script(src="lib/jquery-3.4.1.min.js")
         script(src="lib/js/bootstrap.min.js")
