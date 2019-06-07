@@ -5,8 +5,12 @@
 @import 'reset';
 
 // main style
+.wrapper{
+    box-sizing: border-box;
+    font-size: 16px;
+}
 .head{
     height: 100vh;
-    background: url('../img/potencialeks.png') no-repeat;
+    background: url('../img/example2.png') no-repeat;
     background-size: cover;
 }
