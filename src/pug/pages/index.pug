@@ -16,22 +16,22 @@ html(lang='en')
     body
         div(class="wrapper")
             div(class="head")
-                nav(class="navbar navbar-expand-md")
-                    a(class="navbar-brand text-white" href="#")
+                nav(class="navbar navbar-expand-md navbar-light fixed-top")
+                    a(class="navbar-brand" href="#")
                         sup &copy;
                         | Potencialex
                     
                     button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                        span(class="navbar-toggler-icon")
+                        span(class="navbar-toggler-icon bg-light")
 
                     div(class="collapse navbar-collapse justify-content-end" id="navbar")
                         ul(class="navbar-nav")
                             li(class="nav-item mr-3")
-                                a(class="text-white" href="#buy") Купить
+                                a(class="nav" href="#buy") Comprare
                             li(class="nav-item mr-3")
-                                a(class="text-white" href="#short-description") Краткое описание
+                                a(class="nav" href="#short-description") Breve descrizione
                             li(class="nav-item mr-3")
-                                a(class="text-white" href="#property-product") Свойства товара
+                                a(class="nav" href="#property-product") Proprietà del prodotto
 
                 header(class="header"  id="short-description")
                     include ../layouts/block_1.pug
@@ -40,10 +40,10 @@ html(lang='en')
                 include ../layouts/block_2.pug
                 include ../layouts/block_3.pug
 
-            footer(class="footer")
+            footer(class="footer bg-primary" id="buy")
                 include ../layouts/block_4.pug
 
         script(src="lib/jquery-3.4.1.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js")
         script(src="lib/js/bootstrap.min.js")
-        script(src="js/jquery.countdown.js")
         script(src="js/main.js")
