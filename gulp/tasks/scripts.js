@@ -13,10 +13,7 @@ module.exports = () => {
     });
     
     $.gulp.task('scripts', () => {
-        return $.gulp.src([
-            'src/static/js/main.js',
-            'src/static/js/jquery.countdown.js'
-        ])
+        return $.gulp.src('src/static/js/main.js')
             .pipe($.gulp.dest('dist/js'))
             .pipe($.bs.reload({
                 stream: true
